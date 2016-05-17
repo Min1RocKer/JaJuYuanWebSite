@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>个人中心</title>
+		<script src="js/jquery-1.12.3.min.js"></script>
+		<script src="js/respond.min.js"></script>
+		<script src="js/util.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/style.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/Style.css">
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	</head>
+
+	<body>
+				<header class="headerContainer navbar-fixed-top">
+			<div class="topContainer">
+				<div class="main_top container">
+					<div class="top_logo"><img alt="logo" src="images/top_logo.jpg"></div>
+					<a id="loginConsole" title="loginConsole" ref="bookmark"  target="_blank" href="http://console.jjyapp.com/a/login;JSESSIONID=f6bbdd8764e845abb15c0a4247e2e1a8" class="loginConsole">登录直通号</a>
+					<a id="logOrReg" title="logOrReg" ref="bookmark" href="login.html" class="logOrReg"><i class="index_icons1"></i>登录/注册</a>
+					<div id="logSuccess" class="logSuccess">
+						<i class="index_icons2"></i>
+						<a title="个人中心" ref="bookmark" href="personalCenter.html" class="devider" id="personCenter">个人中心</a>
+						<i class="index_icons3"></i>
+						<a title="logout" ref="bookmark" href="#" id="logout">退出</a>
+					</div>
+				</div>
+			</div>
+			<div class="navContainer">
+				<nav class="main-navigation">
+					<div class="container">
+						<ul class="nav navbar row menu">
+							<li role="presentation" class="active col-md-20 col-sm-20 col-xs-140"><a  class="active-color"  title="首页" ref="bookmark" href="index.html">首页</a></li>
+							<li role="presentation" class="col-md-20 col-sm-20 col-xs-140"><a title="花色汇" ref="bookmark" href="#">花色汇</a>
+								<ul class="sub-menu">
+				                  <li><a title="最新花色" ref="bookmark" href="latestColor.html" class="line">最新花色</a></li>
+				                  <li><a title="经典花色" ref="bookmark" href="classicalColor.html" class="line">经典花色</a></li>
+				                  <li><a title="找花色" ref="bookmark" href="discover.html" class="line">找花色</a></li>
+				                  <li><a title="抢花色" ref="bookmark" href="grab.html">抢花色</a></li>
+				                </ul>
+							</li>
+							<li role="presentation" class="col-md-20 col-sm-20 col-xs-140"><a title="APP下载" ref="bookmark" href="AppDownload.html">APP下载</a></li>
+							<li role="presentation" class="col-md-20 col-sm-20 col-xs-140"><a title="国际版" ref="bookmark" href="International.html">国际版</a></li>
+							<li role="presentation" class="col-md-20 col-sm-20 col-xs-140"><a title="资讯" ref="bookmark" href="Message.html">资讯</a></li>
+							<li role="presentation" class="col-md-20 col-sm-20 col-xs-140"><a title="直通号" ref="bookmark" href="directConnect.html">直通号</a></li>
+							<li role="presentation" class="col-md-20 col-sm-20 col-xs-140"><a title="关于我们" ref="bookmark" href="#">关于我们</a>
+								<ul class="sub-menu">
+									<li><a title="公司简介" ref="bookmark" href="companyIntr.html" class="line">公司简介</a></li>
+									<li><a title="近期活动" ref="bookmark" href="recentActive.html" class="line">近期活动</a></li>
+									<li><a title="联系我们" ref="bookmark" href="contactUs.html">联系我们</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<article class="personal_main container">
+			<div class="row">
+				<div class="col-xs-140">
+					<label class="title">个人中心</label>
+					<hr class="title_line">
+				</div>
+				<div class="col-xs-140 personal_content">
+					<div class="container">
+						<div class="row">
+							<!--**************侧边导航****************-->
+							<div class="col-xs-27 personal_nav">
+								<div class="container-fluid">
+									<div class="row">
+										<div class="col-xs-140">
+											<div id="triangle1" class="triangle-right1"></div>
+											<div id="personal_aside_nav1" class="personal_aside_nav1 col-xs-140">个人信息</div>
+										</div>
+										<div class="col-xs-140">
+											<div id="triangle2" class="triangle-right2"></div>
+											<div id="personal_aside_nav2" class="personal_aside_nav2 col-xs-140">我的消息</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--**************个人中心右侧内容****************-->
+							<div class="col-xs-110 personal_content_main">
+								<!--**************个人信息右侧内容****************-->
+								<div id="personal_info" class="personal_info container-fluid">
+									<div class="row">
+										<div class="col-xs-90">
+											<label class="personal_info_left w_spacing">姓 名：</label>
+											<label class="personal_info_right">王小胖</label><i id="pages_icons1" class="pages_icons1"></i>
+											<input class="personal_info_right_change" id="personName" type="text" value="王小胖">
+										</div>
+										<div class="col-xs-90">
+											<label class="personal_info_left">公司名称：</label>
+											<label class="personal_info_right">萌趣科技有限公司</label>
+											<input class="personal_info_right_change" type="text" id="personofficeName" value="萌趣科技有限公司">
+										</div>
+										<div class="col-xs-90">
+											<label class="personal_info_left w_spacing">行 业：</label>
+											<label class="personal_info_right">装饰纸</label>
+											<input class="personal_info_right_change" type="text" id="personindustry" value="装饰纸">
+										</div>
+										<div class="col-xs-90 address">
+											<label class="personal_info_left">公司地址：</label>
+											<label class="personal_info_right">浙江省杭州市西湖区万塘路288号</label>
+											<input class="personal_info_right_change" type="text" value="浙江省杭州市西湖区万塘路288号">
+										</div>
+										<!--隐藏域 存放公司id-->
+										<div id="officeid"></div>
+										<!--隐藏域 存放认证商家-->
+										<div id="isVip"></div>
+										
+										<div id="personal_info_changeBtn" class="personal_info_changeBtn col-xs-30">
+											<i class="pages_icons2"></i> <span>修改个人信息</span>
+										</div>
+										<div id="personal_info_update" class="personal_info_changeBtn col-xs-30">
+											<span>更新</span>
+										</div>
+									</div>
+								</div>
+								<!--**************我的消息右侧内容****************-->
+								<div id="my_news" class="my_news container-fluid">
+									<div class="row">
+										<div class="my_info col-xs-140">
+											<i class="pages_icons3"></i>
+											<a class="my_info_text" href="#">加入家居元，扫码送好礼，赶紧下载家居元APP注册吧！</a>
+											<label class="my_info_time">3天前</label>
+										</div>
+										<div class="my_info col-xs-140">
+											<i class="pages_icons3"></i>
+											<a class="my_info_text" href="#">加入家居元，扫码送好礼，赶紧下载家居元APP注册吧！</a>
+											<label class="my_info_time">3天前</label>
+										</div>
+										<div class="my_info_cosl col-xs-140">
+											<i class="pages_icons3"></i>
+											<a class="my_info_text" href="#">全选</a>
+											<div class="my_info_delete"><i class="pages-icons4"></i>删除</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="backTop" class="backTop"></div>
+		</article>
+    <!--****申请变更资料弹出框****-->
+    <div id="vipinfo_modal" class="vipinfo_modal">
+        <div class="vipinfo_modal_bg"></div>
+        <div id="vipinfo_modal_header" class="vipinfo_modal_header">
+          <label class="vipinfo_modal_title">申请变更资料</label>
+          <i class="vipinfo_modal_close"></i>
+        </div>
+        <div id="vipinfo_modal_content" class="vipinfo_modal_content">
+          <label class="vipinfo_modal_label">*请在下面输入框内输入申请变更的内容：</label>
+          <textarea id="vipinfo_modal_reason" class="vipinfo_modal_reason _input">请填写您的申请理由</textarea>
+          <div id="vipinfo_modal_cancel" class="vipinfo_modal_cancel">取消申请</div>
+          <div id="vipinfo_modal_submit" class="vipinfo_modal_submit">提交申请</div>
+        </div>
+    </div>
+		<footer>Copyright © 2015-2016 jjyapp.com 小雅科技 浙ICP备15024844号</footer>
+		<script type="text/javascript">
+			$("._input").focus(function(){
+				this.select();
+			});
+		</script>
+	</body>
+</html>

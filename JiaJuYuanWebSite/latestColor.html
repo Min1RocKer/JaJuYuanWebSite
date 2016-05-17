@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="X-UA-Compatible" content="IE=8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>最新花色</title>
+		<script src="js/jquery-1.12.3.min.js"></script>
+		<script src="js/util.js" type="text/javascript" charset="utf-8"></script>
+		 <script src="js/style.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/latestColor.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/Style.css">
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	</head>
+
+	<body id="latestBody">
+		<header class="headerContainer navbar-fixed-top">
+			<div class="topContainer">
+				<div class="main_top container">
+					<div class="top_logo"><img alt="logo" src="images/top_logo.jpg"></div>
+					<a id="loginConsole" title="loginConsole" ref="bookmark" target="_blank" href="http://console.jjyapp.com/a/login;JSESSIONID=f6bbdd8764e845abb15c0a4247e2e1a8" class="loginConsole">登录直通号</a>
+					<a id="logOrReg" title="logOrReg" ref="bookmark" href="login.html" class="logOrReg"><i class="index_icons1"></i>登录/注册</a>
+					<div id="logSuccess" class="logSuccess">
+						<i class="index_icons2"></i>
+						<a title="个人中心" ref="bookmark" href="personalCenter.html" class="devider" id="personCenter">个人中心</a>
+						<i class="index_icons3"></i>
+						<a title="logout" ref="bookmark" href="#" id="logout">退出</a>
+					</div>
+				</div>
+			</div>
+			<div class="navContainer">
+				<nav class="main-navigation">
+					<div class="container">
+						<ul class="nav navbar row menu">
+							<li role="presentation" class="active col-md-20 col-sm-20 col-xs-140"><a title="首页" ref="bookmark" href="index.html">首页</a></li>
+							<li role="presentation" class="col-md-20 col-sm-20 col-xs-140"><a class="active-color" title="花色汇" ref="bookmark" href="#">花色汇</a>
+								<ul class="sub-menu">
+									<li><a title="最新花色" ref="bookmark" href="latestColor.html" class="line">最新花色</a></li>
+									<li><a title="经典花色" ref="bookmark" href="classicalColor.html" class="line">经典花色</a></li>
+									<li><a title="找花色" ref="bookmark" href="discover.html" class="line">找花色</a></li>
+									<li><a title="抢花色" ref="bookmark" href="grab.html">抢花色</a></li>
+								</ul>
+							</li>
+							<li role="presentation" class="col-md-20 col-sm-20 col-xs-140"><a title="APP下载" ref="bookmark" href="AppDownload.html">APP下载</a></li>
+							<li role="presentation" class="col-md-20 col-sm-20 col-xs-140"><a title="国际版" ref="bookmark" href="International.html">国际版</a></li>
+							<li role="presentation" class="col-md-20 col-sm-20 col-xs-140"><a title="资讯" ref="bookmark" href="Message.html">资讯</a></li>
+							<li role="presentation" class="col-md-20 col-sm-20 col-xs-140"><a title="直通号" ref="bookmark" href="directConnect.html">直通号</a></li>
+							<li role="presentation" class="col-md-20 col-sm-20 col-xs-140"><a title="关于我们" ref="bookmark" href="#">关于我们</a>
+								<ul class="sub-menu">
+									<li><a title="公司简介" ref="bookmark" href="companyIntr.html" class="line">公司简介</a></li>
+									<li><a title="近期活动" ref="bookmark" href="recentActive.html" class="line">近期活动</a></li>
+									<li><a title="联系我们" ref="bookmark" href="contactUs.html">联系我们</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<article class="latest_main container">
+			<div class="row">
+				<div class="col-xs-140">
+					<label class="title">最新花色</label>
+					<hr class="title_line">
+				</div>
+				<div class="col-xs-140 latest_content">
+					<div class="container">
+						<div class="row">
+							<!--**************侧边导航****************-->
+							<div class="col-xs-23 latest_nav">
+								<div class="container-fluid">
+									<div id="latestMenuArea" class="row">
+										<div id="backTop" class="huase_backTop"></div>
+									</div>
+								</div>
+							</div>
+							<!--**************最新花色右侧内容****************-->
+							<div class="col-xs-114 latest_content_main">
+								<!--**************个人信息右侧内容****************-->
+								<div class="latest_content_list container-fluid">
+									<div class="row" id="latestMsgArea">
+
+									</div>
+								</div>
+								
+								<!--分页-->
+								<div id="paging">
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</article>
+		<footer>Copyright © 2015-2016 jjyapp.com 小雅科技 浙ICP备15024844号</footer>
+		<script src="js/laypage.js" type="text/javascript" charset="utf-8"></script>
+	</body>

@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>家居元</title>
+    <script src="js/jquery-1.12.3.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <script src="js/util.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/style.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/Style.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    	<header class="headerContainer navbar-fixed-top">
+			<div class="topContainer">
+				<div class="main_top container">
+					<div class="top_logo"><img alt="logo" src="images/top_logo.jpg"></div>
+					<a id="loginConsole" title="loginConsole" ref="bookmark"  target="_blank" href="http://console.jjyapp.com/a/login;JSESSIONID=f6bbdd8764e845abb15c0a4247e2e1a8" class="loginConsole">登录直通号</a>
+					<a id="logOrReg" title="logOrReg" ref="bookmark" href="login.html" class="logOrReg"><i class="index_icons1"></i>登录/注册</a>
+					<div id="logSuccess" class="logSuccess">
+						<i class="index_icons2"></i>
+						<a title="个人中心" ref="bookmark" href="personalCenter.html" class="devider" id="personCenter">个人中心</a>
+						<i class="index_icons3"></i>
+						<a title="logout" ref="bookmark" href="#" id="logout">退出</a>
+					</div>
+				</div>
+			</div>
+			<div class="navContainer">
+				<nav class="main-navigation">
+					<div class="container">
+						<ul class="nav navbar row menu">
+							<li role="presentation" class="active col-md-20 col-sm-20 col-xs-140"><a  class="active-color" title="首页" ref="bookmark" href="index.html">首页</a></li>
+							<li role="presentation" class="col-md-20 col-sm-20 col-xs-140"><a title="花色汇" ref="bookmark" href="#">花色汇</a>
+								<ul class="sub-menu">
+				                  <li><a title="最新花色" ref="bookmark" href="latestColor.html" class="line">最新花色</a></li>
+				                  <li><a title="经典花色" ref="bookmark" href="classicalColor.html" class="line">经典花色</a></li>
+				                  <li><a title="找花色" ref="bookmark" href="discover.html" class="line">找花色</a></li>
+				                  <li><a title="抢花色" ref="bookmark" href="grab.html">抢花色</a></li>
+				                </ul>
+							</li>
+							<li role="presentation" class="col-md-20 col-sm-20 col-xs-140"><a  title="APP下载" ref="bookmark" href="AppDownload.html">APP下载</a></li>
+							<li role="presentation" class="col-md-20 col-sm-20 col-xs-140"><a title="国际版" ref="bookmark" href="International.html">国际版</a></li>
+							<li role="presentation" class="col-md-20 col-sm-20 col-xs-140"><a title="资讯" ref="bookmark" href="Message.html">资讯</a></li>
+							<li role="presentation" class="col-md-20 col-sm-20 col-xs-140"><a title="直通号" ref="bookmark" href="directConnect.html">直通号</a></li>
+							<li role="presentation" class="col-md-20 col-sm-20 col-xs-140"><a title="关于我们" ref="bookmark" href="#">关于我们</a>
+								<ul class="sub-menu">
+									<li><a title="公司简介" ref="bookmark" href="companyIntr.html" class="line">公司简介</a></li>
+									<li><a title="近期活动" ref="bookmark" href="recentActive.html" class="line">近期活动</a></li>
+									<li><a title="联系我们" ref="bookmark" href="contactUs.html">联系我们</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+    <article ref="bookmark" class="index_main">
+      <section class="banner">
+        <div class="container">
+          <div class="row"><img alt="index_banner" src="images/index_banner.jpg" class="col-xs-140"></div>
+        </div>
+      </section>
+      <section class="designNav">
+        <div class="container">
+          <div class="row">
+            <label class="col-xs-140">花色汇————家居元的一个重要功能板块。最全的花色信息，最快的花色搜寻！是为家具、地板、木门等行业人士量身定制的饰面花色解决方案。饰面花色品类包括浸渍纸、PVC、科技木皮、宝丽纸、封边包覆等各种饰面材料的花色匹配。</label>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+          	<div id="index_desinav_new" class="index_desinav nav_margin col-lg-34 col-md-33 col-sm-68 col-xs-68 ">
+              <i class="index_icons4"></i>
+              <label class="index_label">最新花色</label>
+              <div id="triangle_new">
+                <div class="index_triangle1"></div>
+                <div class="index_triangle2"></div>
+              </div>
+            </div>
+            <div id="index_desinav_classic" class="index_desinav nav_margin col-lg-34 col-md-33 col-sm-68 col-xs-68 ">
+              <i class="index_icons5"></i>
+              <label class="index_label">经典花色</label> 
+              <div id="triangle_classic">
+                <div class="index_triangle1"></div> 
+                <div class="index_triangle2"></div>   
+              </div>
+            </div>
+            <div id="index_desinav_descover" class="index_desinav nav_margin col-lg-34 col-md-33 col-sm-68 col-xs-68 ">
+              <i class="index_icons6"></i>
+              <label class="index_label">找花色</label>    
+            </div>
+            <div id="index_desinav_grab" class="index_desinav col-lg-34 col-md-33 col-sm-68 col-xs-68 ">
+              <i class="index_icons7"></i>
+              <label class="index_label">抢花色</label>  
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="designlist">
+        <div class="container">
+          <div class="row">
+            <div class="index_title">
+              <div class="index_line"></div>
+              <label id="index_new_title">最新花色</label>
+              <div class="index_line"></div>
+            </div>
+            <div class="col-xs-140">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-70 col-md-28 col-lg-28">
+                    <div id="designlist-i" class="designlist-i">
+                      <div class="designlist-i-img">
+                        <img class="" src="">
+                      </div>
+                      <div class="list_mouseover">
+                        <div class="list_mouseover_bg"></div>
+                        <i></i>
+                        <label>点击查看</label>
+                      </div>
+                      <p class="">DILON三月新品发布</p>
+                    </div> 
+                  </div>
+                  <div class="col-sm-70 col-md-28 col-lg-28">
+                    <div id="designlist-i" class="designlist-i">
+                      <div class="designlist-i-img">
+                        <img class="" src="">
+                      </div>
+                      <div class="list_mouseover">
+                        <div class="list_mouseover_bg"></div>
+                        <i></i>
+                        <label>点击查看</label>
+                      </div>
+                      <p class="">DILON三月新品发布</p>
+                    </div> 
+                  </div>
+                  <div class="col-sm-70 col-md-28 col-lg-28">
+                    <div id="designlist-i" class="designlist-i">
+                      <div class="designlist-i-img">
+                        <img class="" src="">
+                      </div>
+                      <div class="list_mouseover">
+                        <div class="list_mouseover_bg"></div>
+                        <i></i>
+                        <label>点击查看</label>
+                      </div>
+                      <p class="">DILON三月新品发布</p>
+                    </div> 
+                  </div>
+                  <div class="col-sm-70 col-md-28 col-lg-28">
+                    <div id="designlist-i" class="designlist-i">
+                      <div class="designlist-i-img">
+                        <img class="" src="">
+                      </div>
+                      <div class="list_mouseover">
+                        <div class="list_mouseover_bg"></div>
+                        <i></i>
+                        <label>点击查看</label>
+                      </div>
+                      <p class="">DILON三月新品发布</p>
+                    </div> 
+                  </div>
+                  <div class="col-sm-70 col-md-28 col-lg-28">
+                    <div id="designlist-i" class="designlist-i">
+                      <div class="designlist-i-img">
+                        <img class="" src="">
+                      </div>
+                      <div class="list_mouseover">
+                        <div class="list_mouseover_bg"></div>
+                        <i></i>
+                        <label>点击查看</label>
+                      </div>
+                      <p class="">DILON三月新品发布</p>
+                    </div> 
+                  </div>
+                  <div class="col-sm-70 col-md-28 col-lg-28">
+                    <div id="designlist-i" class="designlist-i">
+                      <div class="designlist-i-img">
+                        <img class="" src="">
+                      </div>
+                      <div class="list_mouseover">
+                        <div class="list_mouseover_bg"></div>
+                        <i></i>
+                        <label>点击查看</label>
+                      </div>
+                      <p class="">DILON三月新品发布</p>
+                    </div> 
+                  </div>
+                  <div class="col-sm-70 col-md-28 col-lg-28">
+                    <div id="designlist-i" class="designlist-i">
+                      <div class="designlist-i-img">
+                        <img class="" src="">
+                      </div>
+                      <div class="list_mouseover">
+                        <div class="list_mouseover_bg"></div>
+                        <i></i>
+                        <label>点击查看</label>
+                      </div>
+                      <p class="">DILON三月新品发布</p>
+                    </div> 
+                  </div>
+                  <div class="col-sm-70 col-md-28 col-lg-28">
+                    <div id="designlist-i" class="designlist-i">
+                      <div class="designlist-i-img">
+                        <img class="" src="">
+                      </div>
+                      <div class="list_mouseover">
+                        <div class="list_mouseover_bg"></div>
+                        <i></i>
+                        <label>点击查看</label>
+                      </div>
+                      <p class="">DILON三月新品发布</p>
+                    </div> 
+                  </div>
+                  <div class="col-sm-70 col-md-28 col-lg-28">
+                    <div id="designlist-i" class="designlist-i">
+                      <div class="designlist-i-img">
+                        <img class="" src="">
+                      </div>
+                      <div class="list_mouseover">
+                        <div class="list_mouseover_bg"></div>
+                        <i></i>
+                        <label>点击查看</label>
+                      </div>
+                      <p class="">DILON三月新品发布</p>
+                    </div> 
+                  </div>
+                  <div class="col-sm-70 col-md-28 col-lg-28">
+                    <div id="designlist-i" class="designlist-i">
+                      <div class="designlist-i-img">
+                        <img class="" src="">
+                      </div>
+                      <div class="list_mouseover">
+                        <div class="list_mouseover_bg"></div>
+                        <i></i>
+                        <label>点击查看</label>
+                      </div>
+                      <p class="">DILON三月新品发布</p>
+                    </div> 
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="index_title">
+              <div class="index_line line_color"></div>
+              <div id="index_more" class="index_more"><a href="latestColor.html">查看更多</a></div>
+              <div class="index_line line_color"></div>
+            </div>
+          </div>
+        </div>            
+      </section>
+      <section class="classical_designlist">
+        <div class="container">
+          <div class="row">
+            <div class="index_title">
+              <div class="index_line"></div>
+              <label id="index_new_title">经典花色</label>
+              <div class="index_line"></div>
+            </div>
+            <div class="col-xs-140">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-70 col-md-28 col-lg-28">
+                    <div id="designlist-i" class="designlist-i">
+                      <div class="designlist-i-img">
+                        <img class="" src="">
+                      </div>
+                      <div class="list_mouseover">
+                        <div class="list_mouseover_bg"></div>
+                        <i></i>
+                        <label>点击查看</label>
+                      </div>
+                      <p class="">DILON三月新品发布</p>
+                    </div> 
+                  </div>
+                  <div class="col-sm-70 col-md-28 col-lg-28">
+                    <div id="designlist-i" class="designlist-i">
+                      <div class="designlist-i-img">
+                        <img class="" src="">
+                      </div>
+                      <div class="list_mouseover">
+                        <div class="list_mouseover_bg"></div>
+                        <i></i>
+                        <label>点击查看</label>
+                      </div>
+                      <p class="">DILON三月新品发布</p>
+                    </div> 
+                  </div>
+                  <div class="col-sm-70 col-md-28 col-lg-28">
+                    <div id="designlist-i" class="designlist-i">
+                      <div class="designlist-i-img">
+                        <img class="" src="">
+                      </div>
+                      <div class="list_mouseover">
+                        <div class="list_mouseover_bg"></div>
+                        <i></i>
+                        <label>点击查看</label>
+                      </div>
+                      <p class="">DILON三月新品发布</p>
+                    </div> 
+                  </div>
+                  <div class="col-sm-70 col-md-28 col-lg-28">
+                    <div id="designlist-i" class="designlist-i">
+                      <div class="designlist-i-img">
+                        <img class="" src="">
+                      </div>
+                      <div class="list_mouseover">
+                        <div class="list_mouseover_bg"></div>
+                        <i></i>
+                        <label>点击查看</label>
+                      </div>
+                      <p class="">DILON三月新品发布</p>
+                    </div> 
+                  </div>
+                  <div class="col-sm-70 col-md-28 col-lg-28">
+                    <div id="designlist-i" class="designlist-i">
+                      <div class="designlist-i-img">
+                        <img class="" src="">
+                      </div>
+                      <div class="list_mouseover">
+                        <div class="list_mouseover_bg"></div>
+                        <i></i>
+                        <label>点击查看</label>
+                      </div>
+                      <p class="">DILON三月新品发布</p>
+                    </div> 
+                  </div>
+                  <div class="col-sm-70 col-md-28 col-lg-28">
+                    <div id="designlist-i" class="designlist-i">
+                      <div class="designlist-i-img">
+                        <img class="" src="">
+                      </div>
+                      <div class="list_mouseover">
+                        <div class="list_mouseover_bg"></div>
+                        <i></i>
+                        <label>点击查看</label>
+                      </div>
+                      <p class="">DILON三月新品发布</p>
+                    </div> 
+                  </div>
+                  <div class="col-sm-70 col-md-28 col-lg-28">
+                    <div id="designlist-i" class="designlist-i">
+                      <div class="designlist-i-img">
+                        <img class="" src="">
+                      </div>
+                      <div class="list_mouseover">
+                        <div class="list_mouseover_bg"></div>
+                        <i></i>
+                        <label>点击查看</label>
+                      </div>
+                      <p class="">DILON三月新品发布</p>
+                    </div> 
+                  </div>
+                  <div class="col-sm-70 col-md-28 col-lg-28">
+                    <div id="designlist-i" class="designlist-i">
+                      <div class="designlist-i-img">
+                        <img class="" src="">
+                      </div>
+                      <div class="list_mouseover">
+                        <div class="list_mouseover_bg"></div>
+                        <i></i>
+                        <label>点击查看</label>
+                      </div>
+                      <p class="">DILON三月新品发布</p>
+                    </div> 
+                  </div>
+                  <div class="col-sm-70 col-md-28 col-lg-28">
+                    <div id="designlist-i" class="designlist-i">
+                      <div class="designlist-i-img">
+                        <img class="" src="">
+                      </div>
+                      <div class="list_mouseover">
+                        <div class="list_mouseover_bg"></div>
+                        <i></i>
+                        <label>点击查看</label>
+                      </div>
+                      <p class="">DILON三月新品发布</p>
+                    </div> 
+                  </div>
+                  <div class="col-sm-70 col-md-28 col-lg-28">
+                    <div id="designlist-i" class="designlist-i">
+                      <div class="designlist-i-img">
+                        <img class="" src="">
+                      </div>
+                      <div class="list_mouseover">
+                        <div class="list_mouseover_bg"></div>
+                        <i></i>
+                        <label>点击查看</label>
+                      </div>
+                      <p class="">DILON三月新品发布</p>
+                    </div> 
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="index_title">
+              <div class="index_line line_color"></div>
+              <div id="index_more" class="index_more"><a href="classicalColor.html">查看更多</a></div>
+              <div class="index_line line_color"></div>
+            </div>
+          </div>
+        </div>            
+      </section>
+      <section class="connectUs">
+        <div class="container">
+          <div class="row">
+            <img class="index_codes col-xs-60" src="images/index_codes.jpg">
+            <img class="index_bee col-xs-50" src="images/index_bee.jpg">
+          </div>
+        </div>
+      </section>
+      <section class="feature">
+        <div class="container">
+          <div class="row">
+          	<div class="col-xs-140">
+            	<img class="index_aboutus center-block" src="images/index_aboutus.jpg">
+            	<div id="backTop" class="index_backTop"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+    <ul class="page"></ul>
+    <footer>Copyright © 2015-2016 jjyapp.com 小雅科技     浙ICP备15024844号</footer>
+		<script type="text/javascript">
+       $(".designlist-i").mouseover(function(){
+          $(this).children('.list_mouseover').show();
+       }) 
+       $(".designlist-i").mouseout(function(){
+          $(this).children('.list_mouseover').hide();
+       }) 
+    </script>
+  </body>
+</html>
