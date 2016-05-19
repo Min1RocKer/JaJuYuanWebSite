@@ -69,7 +69,8 @@ $(document).ready(function() {
 					setCookie('userId', msg.result.userid);
 					setCookie('token', msg.result.token);
 				}
-				window.location.href = 'index.html';
+				console.log(serverdomain);
+				window.location.href = serverdomain + 'index.html';
 			}, function(msg) {
 				alert('登录失败');
 			});
@@ -210,9 +211,40 @@ $(document).ready(function() {
 		$("#index_desinav_new").css("background-color", "#f5f4f4");
 		$("#index_desinav_classic").css("background-color", "#f6edda");
 	});
-
-	//点赞样式变化
-	$(".big_top_zan").click(function() {
-		$(".big_top_zan").css("background-position", "0% 70%");
+	//查看大图
+	$('.viewImage').click(function() {
+			var imageId = $(this).attr('colorId');
+			window.location.href = serverdomain + "viewBigImage.html?h=" + imageId + "";
+		})
+		//查看详情
+	$('.indexInfo').click(function() {
+			var colorId = $(this).attr('colorId');
+			window.location.href = serverdomain + "colorDetails.html?h=" + colorId + "";
+		})
+		//
+	$('.classicaldetail').click(function() {
+			var cpId = $(this).attr('companyId');
+			window.location.href = serverdomain + "perCompanyColor.html?h=" + cpId + "";
+		})
+		//点赞样式变化
+	$("#big_top_zan").click(function() {
+		if($("#big_top_zan").hasClass("big_top_zan")){
+			$("#big_top_zan").removeClass("big_top_zan");
+			$("#big_top_zan").addClass("big_top_zan_active");
+		}else{
+			$("#big_top_zan").removeClass("big_top_zan_active");
+			$("#big_top_zan").addClass("big_top_zan");
+		}
+		
 	});
+	//
+	$('#index_desinav_new').click(function() {
+			$('.designlist').show();
+			$('.classical_designlist').hide();
+		})
+		//
+	$('#index_desinav_classic').click(function() {
+		$('.designlist').hide();
+		$('.classical_designlist').show();
+	})
 })

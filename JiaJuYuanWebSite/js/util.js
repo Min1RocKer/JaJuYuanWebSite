@@ -9,7 +9,7 @@ function postData(actionPath, jsonParam, successFunc, errorFunc) {
 		async: true,
 		dataType: "json",
 		success: function(msg) {
-			if (msg.code == 1) {
+			if (msg.code == 1||msg.code == "W2002") {
 				if (successFunc) {
 					successFunc(msg);
 				}
@@ -121,45 +121,6 @@ function pickMenu(rs) {
 	return menuJson;
 }
 //模拟接口数据
-//var menuJson = [{
-//		'MenuName': '三胺纸',
-//		'MenuId': '01',
-//		'SubMenu': [{
-//			'subname': '全部',
-//			'subId': 'all'
-//		}, {
-//			'subname': '木门',
-//			'subId': '01-1'
-//		}, {
-//			'subname': '橱柜',
-//			'subId': '01-2'
-//		}, {
-//			'subname': '地板',
-//			'subId': '01-3'
-//		}, {
-//			'subname': '其他',
-//			'subId': '01-3'
-//		}]
-//	}, {
-//		'MenuName': 'PVC',
-//		'MenuId': '02',
-//		'SubMenu': [{
-//			'subname': '全部',
-//			'subId': 'all'
-//		}, {
-//			'subname': '木门',
-//			'subId': '01-1'
-//		}, {
-//			'subname': '橱柜',
-//			'subId': '01-2'
-//		}, {
-//			'subname': '地板',
-//			'subId': '01-3'
-//		}, {
-//			'subname': '其他',
-//			'subId': '01-3'
-//		}]
-//	}]
 //mock接口数据
 function mockData1(obj,n){
 	var data = new Array;
@@ -176,12 +137,15 @@ var menudetail = mockData1({
 	"type": "木门"
 },50)
 //
-function log(fn){
-	return function(_args){
-		var  start = Date.now();
-		fn(_args);
-		var used = Date.now() - start;
-		console.log("function"+fn+"used"+used+"time");
+var serverdomain = "";
+function getAddress(){
+	var local = window.location.href;
+	if(local.indexOf('192.168.1.20')!=-1){
+		console.log(local.indexOf('192.168.1.20'));
+		serverdomain = "http://192.168.1.20:8080/website";
+	}
+	else if(local.indexOf('127.0.0.1')!=-1){
+		serverdomain = "http://127.0.0.1:8020/JiaJuYuanWebSite/";
 	}
 }
-
+getAddress();

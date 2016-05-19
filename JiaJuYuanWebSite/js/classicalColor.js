@@ -23,7 +23,6 @@ $(document).ready(function() {
 	//
 //搜索
 $('#classicialSearch').click(function() {
-	alert(1);
 	var searchKeys = $('#classical_search_text').val();
 	var postparam = {
 		"pageNo": 1,
